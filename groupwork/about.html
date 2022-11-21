@@ -7,7 +7,21 @@
     <link rel="stylesheet" type="text/css" href="look.css">
   <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 -->
+  <script type="text/javascript">
+    var i = 0;
+      var txt = 'Accelerate'; /* The text */
+      var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("typing").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+  </script>
   </head>
+
   <body>
 <header>
   <div class="topnav">
@@ -22,7 +36,6 @@
     </div>
   </div>
 
-  <section>
     <div class='menu'>
       <a class="logo" href="index.html"><img src="images/logo.png" height="100" width="310" alt="logo"></a>
       <nav>
@@ -34,34 +47,32 @@
       </nav>
 
     </div>
-
-    <!--
-        <div class='sidebar'>
-
-          Sidebar
-        </div>
-    -->
   </header>
 
-  </section>
 
   <!-- Middle part of the page-->
   <section>
 
     <div class="top-info">
-      <div class="">
-          <h3>Discover the Department of Computing and Technology</h3>
-          <p>#Learn Accelerate| Disrupt</p>
+      <div class="blue-background">
+          <h3 style="color:white;">Discover the Department of Computing and Technology</h3>
+          <br>
+          <p>#Learn <span id="typing"></span>| Disrupt</p>
       </div>
-      <div class="">
-          <img src="" alt="">
+      <div class="ct-logo">
+          <img src="images/dgt.png" alt="ct logo" width="180px" height="170px">
       </div>
-      <p>The Department of Computing and Technology was established in 2003 under the then Faculty of Science and Technology, and now under the Faculty of Engineering, Design and
+    </div>
+
+    <div class="top-info2">
+
+      <p style="padding:0 0 20px 0">The Department of Computing and Technology was established in 2003 under the then Faculty of Science and Technology, and now under the Faculty of Engineering, Design and
           Technology. The department aspires to the university’s innovation centre recognized nationally and internationally in teaching and multidisciplinary research in Data Science,
           Information and Communication Technology ( ICT ), AND Electronics Engineering.</p>
 
       <p>
           <h2>Our Offerings</h2>
+          <br>
           <p>The Department of Computing and Technology offers both undergraduate and postgraduate degree programs ( Master of Information Technology, Bachelor of Science in
               Computer Science, Bachelor of Science in Information Technology, Bachelor of Science in Electronics and Communications Science, Diploma in Information Technology and
               Entrepreneurship ) and technical professional development courses to meet the demand of Computing, Technology and Engineering in the continent.</p>
@@ -70,7 +81,7 @@
 
 
     <div class="dark">
-      <div class="">
+      <div class="dark1">
         <div class="maroon">
           <h3>Undergraduate Focus</h3>
           <p>The department offers various Courses
@@ -92,7 +103,7 @@
           </p>
         </div>
       </div>
-      <div class="">
+      <div class="philosophy">
         <p><h2><i>OUR PHILOSOPHY</i></h2></p>
         <p>at computing and technology, we believe that everyone deserves a
           chance to learn a variety of technical and soft skills that will accelerate
@@ -100,11 +111,12 @@
            class innovations. 💪</p>
         <button type="button" name="button">OUR STAFF TEAM</button>
       </div>
-      <div class="">
+
+      <div class="join">
         <div class="">
-          <img src="" alt="">
+          <img src="images/passion.png" alt="apply to ct department UCU">
         </div>
-        <div class="">
+        <div class="join-us">
           <p><h2><i>JOIN US TODAY</i></h2></p>
           <p>the department offers you the best technical learning experience you will
             get from no other. with active teaching and methods, you are ready to
@@ -117,33 +129,61 @@
 
 
     <div class="blue">
-      <div class="">
+      <div class="in-blue">
         <h4>Learn</h4>
         <p>Discover new skills in the technology space that will boost your development both personally and professionally.</p>
       </div>
-      <div class="">
+      <div class="in-blue">
         <h4>Accelerate</h4>
         <p>Boost your technical skill set exponentially over time setting you up for success in this rapidly evolving digital era.</p>
       </div>
-      <div class="">
+      <div class="in-blue">
         <h4>Disrupt</h4>
         <p>With the vast technical experience gained over time, create disruptive innovations that creates new markets and value to the community. Success!</p>
       </div>
-
-
-
-
     </div>
 
-    <div class="">
-      <h3>See the C&T Department Pictorial</h3>
-      <p>
-        The tour  of the department is  designed for prospective undergraduate,
-         graduate and professional students. You will see how our department looks
-         like, teaching and research labs, students and life in the department. Meet
-         our admissions representative to learn more about our graduate programs
-         and decide what it the best for you.
-      </p>
+
+    <div class="pictorial">
+      <div>
+        <h3>See the C&T Department Pictorial</h3>
+        <p>
+          The tour  of the department is  designed for prospective undergraduate,
+           graduate and professional students. You will see how our department looks
+           like, teaching and research labs, students and life in the department. Meet
+           our admissions representative to learn more about our graduate programs
+           and decide what it the best for you.
+        </p>
+      </div>
+      <div>
+        <!--Slider content-->
+        <div class="slideshow-container">
+           <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/lib.jpg" style="width:100%">
+              <div class="text">Library at campus</div>
+              </div>
+              <div class="mySlides fade">
+                 <div class="numbertext">2 / 3</div>
+                 <img src="images/grass.jpg" style="width:100%;">
+                 <div class="text">The beutiful compound</div>
+              </div>
+              <div class="mySlides fade">
+                 <div class="numbertext">3 / 3</div>
+                 <img src="images/City.jpg" style="width:100%">
+                 <div class="text">workshops that develop students</div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+           <span class="dot" onclick="currentSlide(1)"></span>
+           <span class="dot" onclick="currentSlide(2)"></span>
+           <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+      </div>
     </div>
   </section>
 
