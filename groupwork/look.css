@@ -29,9 +29,11 @@ a {
 /*Styling the menu and the part ontop of the menu*/
 .topnav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background: #1c1b3b;
-  padding: 18px;
+  padding: 10px;
+  font-size: 15px;
 }
 
 .menu {
@@ -55,6 +57,24 @@ a {
 .menu-list > li {
   display: inline;
   margin-right: 50px;
+}
+.menu-list > li:hover {
+  display: inline;
+  margin-right: 50px;
+  color: red;
+  padding: 0 0 5px 0;
+  border-bottom: 5px solid #c50227;
+}
+
+.amenu {
+  color:white;
+}
+
+.amenu:hover {
+  color: #c50227;
+}
+#homeicon {
+  color: white;
 }
 
 /*Stlying for the slider on home page*/
@@ -97,8 +117,16 @@ a {
 .lower-footer {
   padding: 10px;
   color: grey;
-  background: #202020
+  background: #202020;
+  display: flex;
+  justify-content: space-between;
 }
+.icon {
+  display: flex;
+  justify-content: space-around;
+
+}
+
 
 /*Adding style to the main section in home page*/
 .blue-red-headings {
@@ -121,6 +149,7 @@ a {
 }
 .red-h {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 20px 0 20px 0;
   background: #c50227;
@@ -300,8 +329,13 @@ img {vertical-align: middle;}
 
 
 /*STYLING FOR THE CONTACT US PAGE*/
+.before-middle {
+  padding: 130px 20px 50px 20px;
+  font-size: 23px;
+  color: #980a25;
+}
 .middle {
-  padding: 200px 20px 50px 20px;
+  padding: 10px 20px 50px 20px;
 }
 .middle h3 {
   color: blue;
@@ -310,4 +344,5 @@ img {vertical-align: middle;}
 .mid {
   display: flex;
   justify-content: space-around;
+  padding: 0 10px 0 20px;
 }
